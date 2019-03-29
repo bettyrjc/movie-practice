@@ -1,0 +1,120 @@
+:root{
+  --box:0px 0 2px 1px #e6e5e9;
+  --fondo:rgb(254,94,96);
+}
+
+body{
+  margin:0px;;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--box);
+  width: 100%;
+}
+.logo{
+    width: 30%;
+    margin: 0px;
+}
+.search{
+  width: 50%;
+}
+.search input{
+  width: 95%;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  padding: 10px
+}
+.user{
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+  width: 15%;
+  padding:0px 10px;
+}
+.user h2{
+  margin: 0px;
+  align-items: center;
+  padding:10px 0px;
+}
+.arrow{
+ width: 20px;
+ height: 25px;
+ padding:15px 0px;
+}
+.perfil{
+  border-radius: 50%;
+}
+.all{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav{
+  background: var(--fondo);
+  color: white;
+  width: 5%;
+  display: block;
+  padding: 20px 10px;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.initial{
+  vertical-align: middle;
+
+}
+.end {
+margin-top: 95vh;
+}
+.initial p, .end p{
+  margin: 0px;
+  padding-right: 10px;
+}
+.icon-home,
+.icon-star,
+.icon-heart,
+.icon-settings{
+  font-size: 40px;
+  margin:0px;
+  text-align: center;
+}
+
+.item1, .item2, .item3{
+  margin-left: 0px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3,30%);
+  grid-column-gap: 25px;
+  padding-left: 15%;
+    margin-right: 0px;
+}
+.container h1{
+  margin:0px;
+  padding: 10px 0px;
+  text-align: center;
+  color: var(--fondo);
+  padding-left: 15%;
+}
+.top{
+    background-image: url('i.jpg');
+    color:white;
+
+}
+.top-2{
+  margin-top: 170px;
+  border: 1px solid black;
+  background-color: rgba(0,0,0,0.75);
+  box-shadow: var(--box);
+  height: 130px;
+  margin-right: 0px;
+}
+h3, p{
+  padding:10px 5px;
+  margin: 0px;
+}
+@media screen(max-width:600px) {
+  .item1, .item2, .item3{ display: block;}
+}
